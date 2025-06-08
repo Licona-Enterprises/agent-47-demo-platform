@@ -1,15 +1,15 @@
 "use client";
 
 import { DashboardLayout } from "@/components/dashboard-layout";
-import { AgentLogs } from "@/components/agent-logs";
+import { AgentDashboard } from "@/components/agent-dashboard";
 import { useAuth } from "@/hooks/use-auth";
 
-export default function Logs() {
+export default function Home() {
   useAuth();
 
   return (
     <DashboardLayout>
-      <AgentLogs />
+      <AgentDashboard />
     </DashboardLayout>
   );
 }

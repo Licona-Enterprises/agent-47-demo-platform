@@ -1,10 +1,5 @@
-import { DashboardLayout } from "@/components/dashboard-layout"
-import { AgentDashboard } from "@/components/agent-dashboard"
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <DashboardLayout>
-      <AgentDashboard />
-    </DashboardLayout>
-  )
-}
+  redirect("/login");
+} 
